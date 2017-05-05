@@ -1,0 +1,8 @@
+ * * * * * * * * * * * * * * * * * *
+   info 18:11:14.571   main               ad                              main - * AnyDesk Linux Startup *
+   info 18:11:14.571   main               ad                              main - * Version 2.9.0 (master f2617ebf423555053ddb5396dda41b2f2fe54682)
+   info 18:11:14.571   main               ad                              main - * Build 20170428131459
+   info 18:11:14.571   main               ad                              main - * Prefix ad
+   info 18:11:14.571   main               ad                              main - * Copyright (C) 2016 philandro Software GmbH *
+   info 18:11:14.571   main               ad                              main - 
+explode 18:11:14.572   main               ad                   app.common_path - No place for special files found!

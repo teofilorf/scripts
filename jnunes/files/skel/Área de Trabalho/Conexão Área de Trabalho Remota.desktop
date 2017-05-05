@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=
+Terminal=false
+Name=Conexão Área de Trabalho Remota
+Exec=grdesktop.sh
+Type=Application
+Icon=/usr/share/icons/Remote_desktop_connection_icon.png
