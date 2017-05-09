@@ -24,7 +24,7 @@ while read SHARE
   do
     echo -e "\
     [$SHARE]\n
-      path = /home/$SHARE\n
+      path = /renovel/$SHARE\n
       writable = yes\n
       guest ok = yes\n
       guest only = yes\n
