@@ -14,14 +14,17 @@ sudo apt install -f
 #post install
 sudo mv /etc/mdm/mdm.conf /etc/mdm/mdm.conf.bkp
 sudo cp -f files/mdm.conf /etc/mdm/
-
+sudo cp -f files/amp.conf /var/dell/kace/amp.conf
+sudo /opt/dell/kace/bin/AMPTools start
+sudo cp files/kace.service /etc/systemd/system/
+sudo systemctl enable kace.service
 sudo cp files/linux-brprinter-installer-2.1.1-1 /usr/local/bin/brprinter
 sudo chmod +x /usr/local/bin/brprinter
 sudo cp files/Remote_desktop_connection_icon.png /usr/share/icons/
 sudo cp files/grdesktop.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/grdesktop.sh
 sudo rm -rf /etc/skel
-suco cp -rf files/skel /etc/
+sudo cp -rf files/skel /etc/
 
 #ingressar dominio
 sudo cid-gtk

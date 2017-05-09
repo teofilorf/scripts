@@ -1,0 +1,29 @@
+[Unit]
+#Descrição do serviço
+Description=Iniciar kace
+#serviço que precisa inicializar antes deste serviço, como por exemplo serviço de rede
+#Ou mesmo banco de dados
+After=syslog.target
+
+[Service]
+
+#Nome do usuario que vai executar os comandos
+User=root
+#Se for apenas um processo use Type simple, caso ele gere subprocessos o Type é forking
+Type=forking
+#Diz qual arquivo contem o numero pid do processo pai para o systemd fazer o monitoramento
+PIDFile=/var/run/kace.pid
+#Comando que inicializa o serviço
+ExecStart=/opt/dell/kace/bin/AMPTools start
+#Comando que gera o reload do serviço
+ExecReload=/opt/dell/kace/bin/AMPTools reload
+#comando que para o serviço
+ExecStop=killall -9 AMPTools
+
+#Reinicia o serviço caso o processo do pid dentro do PIDFile morra
+Restart=on-abort
+
+[Install]
+#Necessario para instalação do serviço
+WantedBy=multi-user.target
+
