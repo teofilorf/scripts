@@ -2,10 +2,11 @@
 
 
 #adicionar repositorios
-sudo add-apt-repository -y ppa:webupd8team/java && sudo add-apt-repository -y ppa:emoraes25/cid && sudo apt-get update && sudo apt upgrade -y
+sudo add-apt-repository -y ppa:webupd8team/java && sudo add-apt-repository -y ppa:emoraes25/cid && sudo apt-get update
 
 #instalar pacotes
-sudo apt install -y cups-pdf cid-base cid cid-gtk rdesktop yad oracle-java8-set-default 
+sudo apt install -y cups-pdf cid-base cid cid-gtk rdesktop yad oracle-java8-set-default && sudo apt upgrade -y
+
 sudo dpkg -i files/ampagent-6.3.314.ubuntu.64.deb
 wget -c https://download.anydesk.com/linux/anydesk_2.9.0-1_amd64.deb?_ga=2.246307844.1450319514.1494517567-689502156.1494517567 -O anydesk.deb
 sudo dpkg -i anydesk.deb
