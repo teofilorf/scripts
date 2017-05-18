@@ -1,8 +1,8 @@
 #!/bin/bash
 
 mkdir ~/Desktop
-wget -c https://s3.amazonaws.com/files.zimbra.com/downloads/zdesktop/7.3.0/b13060/zdesktop_7_3_0_ga_b13060_20170410030557_linux_x64.tgz 
-tar -zxvf zdesktop_7_3_0_ga_b13060_20170410030557_linux_x64.tgz
-cd zdesktop_7_3_0_ga_b13060_linux_x64
+wget -c https://files.zimbra.com/downloads/zdesktop/7.2.8/b12102/zdesktop_7_2_8_ga_b12102_20161005054617_linux_i686.tgz
+tar -zxvf zdesktop_7_2_8_ga_b12102_20161005054617_linux_i686.tgz
+cd zdesktop_7_2_8_ga_b12102_linux_i686
 cat config.txt | ./install.pl
 cp ~/Desktop/zd.desktop ~/Área\ de\ Trabalho/
