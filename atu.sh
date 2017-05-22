@@ -1,1 +1,1 @@
-git add * && git commit -m 123341 && git push origin master
+git add * && git commit -m "$(date)" && git push origin master
