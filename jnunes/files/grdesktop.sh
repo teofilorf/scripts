@@ -1,5 +1,5 @@
 #!/bin/bash
-conf=~/grdesktop.conf
+conf=~/.grdesktop.conf
 if [ -e "$conf" ] ;then
   texto=$(cat "$conf")
 else
