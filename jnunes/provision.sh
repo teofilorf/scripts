@@ -9,14 +9,11 @@ sudo apt install -y cups-pdf cid-base cid cid-gtk rdesktop yad && \
 sudo apt install -y oracle-java8-set-default && \
 sudo apt upgrade -y && \
 
-sudo dpkg -i files/ampagent-6.3.314.ubuntu.64.deb && \
-sudo apt install -f -y && \
+sudo dpkg -i files/ampagent-6.3.314.ubuntu.64.deb ; sudo apt install -f -y && \
 wget -c https://download.anydesk.com/linux/anydesk_2.9.0-1_amd64.deb?_ga=2.246307844.1450319514.1494517567-689502156.1494517567 -O anydesk.deb && \
-sudo dpkg -i anydesk.deb && \
-sudo apt install -f -y && \
+sudo dpkg -i anydesk.deb ; sudo apt install -f -y && \
 wget -c https://download.teamviewer.com/download/teamviewer_i386.deb && \
-sudo dpkg -i teamviewer_i386.deb && \
-sudo apt install -f -y && \
+sudo dpkg -i teamviewer_i386.deb ; sudo apt install -f -y && \
 
 #Download zimbra
 sudo mkdir /home/zdinstall && \
